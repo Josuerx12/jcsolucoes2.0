@@ -1,0 +1,90 @@
+@use 'variables'
+
+* 
+    border: none
+    box-sizing: border-box
+    padding: 0
+    text-decoration: none
+    margin: 0
+    list-style: none
+
+html
+    font-size: 62.5%
+
+body
+    overflow-x: hidden
+    font-family: 'nunito'
+    padding-left: 40rem
+
+.sidebar
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    position: fixed
+    background: variables.$menu-bg-color
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 40rem
+    min-height: 100vh
+    &-logo
+        h1
+            font-family: Arial, Helvetica, sans-serif
+            width: 100%
+            font-weight: 800
+            font-size: 4rem
+            color: #ff5100
+            margin: 5rem
+    &-menu
+        ul
+            li
+                text-align: center
+                margin: 2rem
+                &:hover
+                    color: #ff0000b7
+                &:active
+                    color: #6e0000
+                i
+                    font-size: 2rem 
+                a
+                    font-weight: 800
+                    letter-spacing: .3rem
+                    font-size: 2rem
+                    text-transform: uppercase
+                    color: variables.$menu-txt-color    
+                    &:hover
+                        color: #ff0000b7
+                    &:active
+                        color: #6e0000
+    &-orcamento
+        button
+            padding: 1.6rem 2rem
+            font-weight: 600
+            background: variables.$menu-txt-color
+            border-radius: variables.$btn-radius
+            a
+                color: #ff5100
+                font-size: 2rem
+                padding: 3px
+                transition: .1s ease-in-out
+                &:hover
+                    color: variables.$menu-bg-color
+                    border-bottom: 2px solid#ff5100
+                &:active
+                    color: #ffef0aab
+                    border-bottom: 2px solid#ff5100b0
+#active
+    color: #6e0000
+    transform: translateY(-10px)
+    border-bottom: 2px solid black
+    width: fit-content
+    margin: auto
+
+.mobile-btn
+    position: fixed
+    top: 20px
+    right: 20px
+    bottom: 0
+    

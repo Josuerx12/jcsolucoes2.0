@@ -1,0 +1,104 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "nunito";
+  padding-left: 40rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background: #fff00a;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 40rem;
+  min-height: 100vh;
+}
+.sidebar-logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-weight: 800;
+  font-size: 4rem;
+  color: #ff5100;
+  margin: 5rem;
+}
+.sidebar-menu ul li {
+  text-align: center;
+  margin: 2rem;
+}
+.sidebar-menu ul li:hover {
+  color: rgba(255, 0, 0, 0.7176470588);
+}
+.sidebar-menu ul li:active {
+  color: #6e0000;
+}
+.sidebar-menu ul li i {
+  font-size: 2rem;
+}
+.sidebar-menu ul li a {
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2A150D;
+}
+.sidebar-menu ul li a:hover {
+  color: rgba(255, 0, 0, 0.7176470588);
+}
+.sidebar-menu ul li a:active {
+  color: #6e0000;
+}
+.sidebar-orcamento button {
+  padding: 1.6rem 2rem;
+  font-weight: 600;
+  background: #2A150D;
+  border-radius: 10px;
+}
+.sidebar-orcamento button a {
+  color: #ff5100;
+  font-size: 2rem;
+  padding: 3px;
+  transition: 0.1s ease-in-out;
+}
+.sidebar-orcamento button a:hover {
+  color: #fff00a;
+  border-bottom: 2px solid #ff5100;
+}
+.sidebar-orcamento button a:active {
+  color: rgba(255, 239, 10, 0.6705882353);
+  border-bottom: 2px solid rgba(255, 81, 0, 0.6901960784);
+}
+
+#active {
+  color: #6e0000;
+  transform: translateY(-10px);
+  border-bottom: 2px solid black;
+  width: fit-content;
+  margin: auto;
+}
+
+.mobile-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=inicio.css.map */
