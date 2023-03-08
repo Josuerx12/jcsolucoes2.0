@@ -15,33 +15,50 @@ body
     overflow-x: hidden
     font-family: 'nunito'
     padding-left: 40rem
+    background: variables.$bg-color
+    color: variables.$txt-color
 
 .sidebar
     display: flex
     flex-direction: column
-    justify-content: space-around
+    justify-content: center
+    gap: 4rem
     align-items: center
     position: fixed
     background: variables.$menu-bg-color
     top: 0
     left: 0
     bottom: 0
-    right: 0
     width: 40rem
     min-height: 100vh
+    height: 100% auto
+    margin: auto
+    transition: .3s linear
     &-logo
+        margin: 2rem 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        img
+            width: 200px
+            height: 200px
         h1
+            text-align: center
             font-family: Arial, Helvetica, sans-serif
             width: 100%
             font-weight: 800
             font-size: 4rem
             color: #ff5100
-            margin: 5rem
     &-menu
         ul
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 2rem
             li
                 text-align: center
-                margin: 2rem
                 &:hover
                     color: #ff0000b7
                 &:active
@@ -64,6 +81,7 @@ body
             font-weight: 600
             background: variables.$menu-txt-color
             border-radius: variables.$btn-radius
+            margin: 0 0 2rem 0
             a
                 color: #ff5100
                 font-size: 2rem
@@ -76,15 +94,110 @@ body
                     color: #ffef0aab
                     border-bottom: 2px solid#ff5100b0
 #active
-    color: #6e0000
-    transform: translateY(-10px)
+    color: #a50000
     border-bottom: 2px solid black
     width: fit-content
     margin: auto
 
 .mobile-btn
+    display: none
     position: fixed
     top: 20px
     right: 20px
     bottom: 0
-    
+    & button
+        font-size: 3rem
+        padding: .8rem
+        background: transparent
+        color: variables.$txt-color
+        cursor: pointer
+        border: 2px solid variables.$txt-color
+        border-radius: 10px
+
+section
+    min-height: 100vh
+    height: 500px auto
+    width: 100%
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.loc 
+    display: flex
+    flex-direction: column
+    text-align: center
+    gap: 1.4rem
+    & div
+        i
+            font-size: 2rem
+            color: #146811
+        span
+            font-weight: 700
+            font-size: 2rem
+    & button
+        
+        width: fit-content
+        text-align: center
+        margin: auto
+        padding: 1rem
+        border: 2px solid variables.$menu-txt-color
+        border-radius: variables.$btn-radius
+        cursor: pointer
+        transition: .2s linear
+        &:hover
+            background: variables.$menu-bg-color
+            color: #146811
+        & a
+            font-size: 2rem
+            color: variables.$txt-color
+            font-weight: 700
+            text-transform: uppercase
+            transition: .1s ease-in-out
+            &:active
+                color: #146811
+        & i
+            font-size: 1.2rem      
+        & i:first-child
+            font-size: 2.2rem
+.apresentacao
+    margin: 5rem 2rem
+    text-align: justify
+    & p
+        max-width: 460px
+        font-size: 1.8rem
+        border: 2px solid variables.$menu-txt-color
+        padding: 1.6rem
+        border-radius: variables.$btn-radius
+        background: #146811
+        color: #f2f2f2
+
+@media (max-width: 420px)
+    html
+        font-size: 50%
+    .loc
+        & div
+            display: none
+        & button
+            margin: 2rem
+            & i
+                font-size: 1.6rem !important
+            & a
+                font-size: 1.6rem !important
+
+
+@media (max-width: 1100px)
+    html
+        font-size: 55%
+    body
+        padding: 0
+    .mobile-btn
+        display: block
+    .sidebar
+        display: flex
+        position: fixed
+        left: -2000px
+        width: 100%
+    .on
+        left: 0

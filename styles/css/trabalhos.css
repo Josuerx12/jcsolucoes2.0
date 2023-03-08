@@ -133,93 +133,6 @@ body {
   border-radius: 10px;
 }
 
-section {
-  min-height: 100vh;
-  height: 500px auto;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.loc {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.4rem;
-}
-.loc div i {
-  font-size: 2rem;
-  color: #146811;
-}
-.loc div span {
-  font-weight: 700;
-  font-size: 2rem;
-}
-.loc button {
-  width: fit-content;
-  text-align: center;
-  margin: auto;
-  padding: 1rem;
-  border: 2px solid #2A150D;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-.loc button:hover {
-  background: #fff00a;
-  color: #146811;
-}
-.loc button a {
-  font-size: 2rem;
-  color: #2A150D;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-}
-.loc button a:active {
-  color: #146811;
-}
-.loc button i {
-  font-size: 1.2rem;
-}
-.loc button i:first-child {
-  font-size: 2.2rem;
-}
-
-.apresentacao {
-  margin: 5rem 2rem;
-  text-align: justify;
-}
-.apresentacao p {
-  max-width: 460px;
-  font-size: 1.8rem;
-  border: 2px solid #2A150D;
-  padding: 1.6rem;
-  border-radius: 10px;
-  background: #146811;
-  color: #f2f2f2;
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 50%;
-  }
-  .loc div {
-    display: none;
-  }
-  .loc button {
-    margin: 2rem;
-  }
-  .loc button i {
-    font-size: 1.6rem !important;
-  }
-  .loc button a {
-    font-size: 1.6rem !important;
-  }
-}
 @media (max-width: 1100px) {
   html {
     font-size: 55%;
@@ -231,14 +144,11 @@ section {
     display: block;
   }
   .sidebar {
-    display: flex;
-    position: fixed;
     left: -2000px;
-    width: 100%;
   }
   .on {
     left: 0;
   }
 }
 
-/*# sourceMappingURL=inicio.css.map */
+/*# sourceMappingURL=trabalhos.css.map */
