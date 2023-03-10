@@ -219,7 +219,7 @@ section {
   font-size: 2.4rem;
   text-align: center;
 }
-.saiba-mais button {
+.saiba-mais a {
   cursor: pointer;
   width: fit-content;
   margin: auto;
@@ -227,17 +227,93 @@ section {
   border-radius: 10px;
   font-weight: 700;
   font-size: 1.8rem;
+  color: #2A150D;
   border: 2px solid #2A150D;
   transition: 0.2s ease-in-out;
 }
-.saiba-mais button i:last-child {
+.saiba-mais a i:last-child {
   color: #146811;
 }
-.saiba-mais button:hover {
+.saiba-mais a:hover {
   background: #fff00a;
 }
-.saiba-mais button:active {
+.saiba-mais a:active {
   color: #146811;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 2rem 10rem 2rem;
+}
+.redes-sociais h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: #146811;
+  padding: 0.6rem;
+  border: 2px solid #2A150D;
+  border-radius: 10px 10px 0 0;
+}
+.redes-sociais div {
+  margin-top: -6px;
+  display: flex;
+  background: #146811;
+  border: 2px solid #2A150D;
+  border-radius: 10px;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.redes-sociais div a {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  color: #f2f2f2;
+  transition: 0.2s linear;
+}
+.fa-instagram:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 4px 1px rgba(242, 242, 242, 0.4862745098);
+}
+.fa-instagram:active {
+  color: rgba(242, 242, 242, 0.568627451);
+}
+
+.fa-facebook {
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: #4267B2;
+  color: #f2f2f2;
+  transition: 0.2s linear;
+}
+.fa-facebook:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 4px 1px rgba(242, 242, 242, 0.4862745098);
+}
+.fa-facebook:active {
+  color: rgba(242, 242, 242, 0.568627451);
+}
+
+.fa-github {
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: #171515;
+  color: #f2f2f2;
+  transition: 0.2s linear;
+}
+.fa-github:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 4px 1px rgba(242, 242, 242, 0.4862745098);
+}
+.fa-github:active {
+  color: rgba(242, 242, 242, 0.568627451);
 }
 
 @media (max-width: 420px) {

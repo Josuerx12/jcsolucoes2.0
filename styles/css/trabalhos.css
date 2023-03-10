@@ -133,7 +133,194 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 1100px) {
+section {
+  min-height: 100vh;
+  height: 500px auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .trabalhos {
+  margin: 10rem 2rem 10rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+section .trabalhos-1 {
+  background: #146811;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+section .trabalhos-1 h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: #fff00a;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid #2A150D;
+  text-transform: uppercase;
+}
+section .trabalhos-1 p {
+  margin: 1rem auto;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f2f2f2;
+  border: 2px solid #2A150D;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 10px;
+  max-width: 30rem;
+}
+section .trabalhos-1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+section .trabalhos-1 div button {
+  padding: 1rem;
+  border-radius: 10px;
+  background: #2A150D;
+  color: #f2f2f2;
+  font-weight: 600;
+  border: 2px solid #fff00a;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+section .trabalhos-1 div button:hover {
+  background: #fff00a;
+  border: 2px solid #2A150D;
+  color: #2A150D;
+}
+section .trabalhos-1 div button:active {
+  color: rgba(42, 21, 13, 0.5568627451);
+}
+section .trabalhos-1 img {
+  width: 30rem;
+  height: 30rem;
+}
+section .trabalhos-2 {
+  background: #146811;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+section .trabalhos-2 h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: #fff00a;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid #2A150D;
+  text-transform: uppercase;
+}
+section .trabalhos-2 p {
+  margin: 1rem auto;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f2f2f2;
+  border: 2px solid #2A150D;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 10px;
+  max-width: 30rem;
+}
+section .trabalhos-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+section .trabalhos-2 div button {
+  padding: 1rem;
+  border-radius: 10px;
+  background: #2A150D;
+  color: #f2f2f2;
+  font-weight: 600;
+  border: 2px solid #fff00a;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+section .trabalhos-2 div button:hover {
+  background: #fff00a;
+  border: 2px solid #2A150D;
+  color: #2A150D;
+}
+section .trabalhos-2 div button:active {
+  color: rgba(42, 21, 13, 0.5568627451);
+}
+section .trabalhos-2 img {
+  width: 30rem;
+  height: 30rem;
+}
+section .trabalhos-3 {
+  background: #146811;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+section .trabalhos-3 h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: #fff00a;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid #2A150D;
+  text-transform: uppercase;
+}
+section .trabalhos-3 p {
+  margin: 1rem auto;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f2f2f2;
+  border: 2px solid #2A150D;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 10px;
+  max-width: 30rem;
+}
+section .trabalhos-3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+section .trabalhos-3 div button {
+  padding: 1rem;
+  border-radius: 10px;
+  background: #2A150D;
+  color: #f2f2f2;
+  font-weight: 600;
+  border: 2px solid #fff00a;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+section .trabalhos-3 div button:hover {
+  background: #fff00a;
+  border: 2px solid #2A150D;
+  color: #2A150D;
+}
+section .trabalhos-3 div button:active {
+  color: rgba(42, 21, 13, 0.5568627451);
+}
+section .trabalhos-3 img {
+  width: 30rem;
+  height: 30rem;
+}
+
+@media (max-width: 1170px) {
   html {
     font-size: 55%;
   }
