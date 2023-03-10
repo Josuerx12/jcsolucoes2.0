@@ -331,6 +331,7 @@ section .trabalhos-3 img {
     display: block;
   }
   .sidebar {
+    width: 100%;
     left: -2000px;
   }
   .sidebar-logo img {

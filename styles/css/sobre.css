@@ -231,6 +231,7 @@ section {
   }
   .sidebar {
     left: -2000px;
+    width: 100%;
   }
   .sidebar-logo img {
     width: 15rem;
