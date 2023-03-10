@@ -14,7 +14,7 @@ mobileBtn.addEventListener ('click', () => {
 })
 
 visu1.addEventListener ('click', () => {
-    window.open ("/", "_self")
+    window.open ("/index.html", "_self")
 })
 
 code1.addEventListener ('click', () => {
