@@ -44,8 +44,8 @@ body {
   justify-content: center;
 }
 .sidebar-logo img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
 }
 .sidebar-logo h1 {
   text-align: center;
@@ -145,6 +145,10 @@ body {
   }
   .sidebar {
     left: -2000px;
+  }
+  .sidebar-logo img {
+    width: 15rem;
+    height: 15rem;
   }
   .on {
     left: 0;

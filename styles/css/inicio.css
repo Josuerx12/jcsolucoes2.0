@@ -44,8 +44,8 @@ body {
   justify-content: center;
 }
 .sidebar-logo img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
 }
 .sidebar-logo h1 {
   text-align: center;
@@ -145,6 +145,7 @@ section {
 }
 
 .loc {
+  margin: 10rem 0 0 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -194,13 +195,49 @@ section {
   text-align: justify;
 }
 .apresentacao p {
-  max-width: 460px;
+  max-width: 600px;
   font-size: 1.8rem;
   border: 2px solid #2A150D;
   padding: 1.6rem;
   border-radius: 10px;
   background: #146811;
   color: #f2f2f2;
+}
+
+.saiba-mais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-itens: center;
+  gap: 1.2rem;
+  margin-bottom: 5rem;
+}
+.saiba-mais h4 {
+  max-width: 580px;
+  margin: auto 2rem;
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.saiba-mais button {
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border: 2px solid #2A150D;
+  transition: 0.2s ease-in-out;
+}
+.saiba-mais button i:last-child {
+  color: #146811;
+}
+.saiba-mais button:hover {
+  background: #fff00a;
+}
+.saiba-mais button:active {
+  color: #146811;
 }
 
 @media (max-width: 420px) {
@@ -235,6 +272,10 @@ section {
     position: fixed;
     left: -2000px;
     width: 100%;
+  }
+  .sidebar-logo img {
+    width: 15rem;
+    height: 15rem;
   }
   .on {
     left: 0;
